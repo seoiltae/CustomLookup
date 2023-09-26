@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Custom LookUp" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+        <c-lwc-custom-lookup
+                    object-name="Account"
+                    icon-name="standard:account"
+                    label=""
+                    onlookupcustomevent={lookupRecord}
+                    search-field="Name"
+                    default-field="Name"
+                    additional-field="Type"
+                    search-limit="LIMIT 5"
+                    target-sort-colum="Name"
+                    sort-condition="ASC"
+                    placeholder="search contacts"
+                    class="custom_lookup_style"
+                ></c-lwc-custom-lookup>
+        </div>
+    </lightning-card>
+</template>
